@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion UI Experience — Bringing Interfaces to Life</title>
+    <link rel="stylesheet" href="motion-ui.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>
+          Motion<span class="logo-accent">UI</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#proscons">Pros &amp; Cons</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#compare">Compare</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <!-- Interface design • 2025 -->
+        </span>
+        <h1 class="hero-title">
+          Bringing Interfaces <br />
+          to <span class="gradient-text">Life.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Motion UI uses small, intentional animations to guide users, explain
+          changes, and make digital products feel alive.
+        </p>
+        <div class="hero-actions">
+          <a href="#demo" class="btn btn-primary">Try the Demo</a>
+          <a href="#concept" class="btn btn-ghost">Learn more</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ WHAT IS MOTION UI ============ -->
+    <section id="concept" class="section">
+      <div class="container two-col">
+        <div>
+          <span class="section-tag"><span class="tag-line"></span>Concept</span>
+          <h2>What is Motion UI?</h2>
+          <p class="lead">
+            Motion UI is the practice of adding subtle, purposeful animation to
+            user interfaces. Instead of static screens, elements move, fade,
+            scale or slide to give visual feedback and make the experience more
+            natural.
+          </p>
+          <p class="muted">
+            Good motion does not decorate — it communicates. It tells the user
+            what changed, what to look at next, and how parts of the interface
+            connect.
+          </p>
+        </div>
+
+        <!-- visual composition made only with shapes (no images, no icons) -->
+        <div class="shape-card">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="center-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROS & CONS ============ -->
+    <section id="proscons" class="section alt">
+      <div class="container">
+        <span class="section-tag"
+          ><span class="tag-line"></span>Pros &amp; Cons</span
+        >
+        <h2>Benefits and trade-offs</h2>
+
+        <div class="grid-2">
+          <!-- PROS CARD -->
+          <div class="card">
+            <h3>Advantages</h3>
+            <ul class="dot-list">
+              <li>
+                <!-- green dot indicator replaces emojis/icons -->
+                <span class="dot dot-good"></span>
+                Guides the user's attention naturally
+              </li>
+              <li>
+                <span class="dot dot-good"></span>
+                Provides instant visual feedback
+              </li>
+              <li>
+                <span class="dot dot-good"></span>
+                Makes transitions feel smooth and logical
+              </li>
+              <li>
+                <span class="dot dot-good"></span>
+                Improves perceived performance
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONS CARD -->
+          <div class="card">
+            <h3>Limitations</h3>
+            <ul class="dot-list">
+              <li>
+                <!-- red dot indicator replaces emojis/icons -->
+                <span class="dot dot-bad"></span>
+                Too much motion can distract users
+              </li>
+              <li>
+                <span class="dot dot-bad"></span>
+                May affect accessibility (motion sickness)
+              </li>
+              <li>
+                <span class="dot dot-bad"></span>
+                Heavy animations can hurt performance
+              </li>
+              <li>
+                <span class="dot dot-bad"></span>
+                Requires careful design decisions
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOWCASE / MICRO INTERACTIONS ============ -->
+    <section class="section">
+      <div class="container">
+        <span class="section-tag"><span class="tag-line"></span>Showcase</span>
+        <h2>Small interactions, big difference</h2>
+
+        <div class="grid-3">
+          <!-- Hover scale -->
+          <div class="mini-card hover-scale">
+            <span class="mini-dot"></span>
+            <p>Hover me — scale</p>
+          </div>
+          <!-- Hover glow -->
+          <div class="mini-card hover-glow">
+            <span class="mini-dot"></span>
+            <p>Hover me — glow</p>
+          </div>
+          <!-- Hover slide line -->
+          <div class="mini-card hover-line">
+            <span class="mini-dot"></span>
+            <p>Hover me — underline</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEMO SECTION ============ -->
+    <section id="demo" class="section alt">
+      <div class="container demo-wrap">
+        <span class="section-tag"><span class="tag-line"></span>Demo</span>
+        <h2>Try it yourself</h2>
+        <p class="muted center">
+          Click a button to apply a different animation to the box below.
+        </p>
+
+        <!-- the animated box -->
+        <div class="demo-stage">
+          <div id="demoBox" class="demo-box"></div>
+        </div>
+
+        <!-- controls -->
+        <div class="demo-controls">
+          <button class="btn btn-small" data-anim="fade">Fade</button>
+          <button class="btn btn-small" data-anim="slide">Slide</button>
+          <button class="btn btn-small" data-anim="pulse">Pulse</button>
+          <button class="btn btn-small" data-anim="spin">Spin</button>
+          <button class="btn btn-small btn-ghost" data-anim="none">
+            Reset
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE vs AFTER ============ -->
+    <section id="compare" class="section">
+      <div class="container">
+        <span class="section-tag"><span class="tag-line"></span>Compare</span>
+        <h2>Before vs After</h2>
+        <p class="muted">
+          Hover the cards below to see how a tiny animation changes the feel of
+          the same component.
+        </p>
+
+        <div class="grid-2">
+          <!-- BEFORE -->
+          <div class="compare-card">
+            <span class="label">
+              <span class="dot dot-bad"></span> Without motion
+            </span>
+            <button class="plain-btn">Click me</button>
+            <p class="muted small">Static, no feedback.</p>
+          </div>
+
+          <!-- AFTER -->
+          <div class="compare-card">
+            <span class="label">
+              <span class="dot dot-good"></span> With motion
+            </span>
+            <button class="motion-btn">Click me</button>
+            <p class="muted small">Subtle response = clearer feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="logo">
+          <span class="logo-dot"></span>
+          Motion<span class="logo-accent">UI</span>
+        </div>
+        <p class="muted small">
+          Student project · Educational landing page about Motion UI.
+        </p>
+      </div>
+    </footer>
+
+    <script src="motion-ui.js"></script>
+  </body>
+</html>
